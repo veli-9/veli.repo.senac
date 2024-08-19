@@ -1,27 +1,12 @@
 //cria a constante salvar_aluno, que vai receber a ID do botão btnsalvar
-const salvar_aluno =
+const salvar =
     document.getElementById('btnsalvar');
-    document.getElementById('form_aluno').addEventListener('submit', function(event) {
-        event.preventDefault(); // Impede o envio do formulário
-        
-        // Exibe o balão de texto
-        const tooltip = document.getElementById('tooltip');
-        tooltip.classList.add('show-tooltip');
-        
-        // Oculta o balão de texto após 3 segundos
-        setTimeout(() => {
-            tooltip.classList.remove('show-tooltip');
-        }, 3000);
-    });
-
-
-
 //cria a função assíncrona de insert (inserção)
 async function insert() {
     //cria a constante form que recebe os valores do formulário de ID aluno
-    const form = document.getElementById('aluno1');
+    const form = document.getElementById('form_professor');
     //cria a constante formData que recebe os campos dos dados de formulário do objeto form aluno
-    const formData = new FormData(aluno1);
+    const formData = new FormData(form_professor);
     //cria a constante opt (options)
     const opt = {
         //seleciona o método de requisição POST
@@ -31,9 +16,9 @@ async function insert() {
         body: formData
     }
     //cria a constante resposta que, por fetch que insere no caminho informado
-    const response = fetch('1aluno.php', opt);
+    const response = fetch('4professor.php', opt);
 }
-salvar_aluno.addEventListener('click', async () => {
+salvar.addEventListener('click', async () => {
     await insert();
 
 });

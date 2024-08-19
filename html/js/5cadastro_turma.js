@@ -3,14 +3,14 @@ const salvar_disciplina =
 
 async function insert() {
 
-    const form = document.getElementById('form_empresa');
-    const formData = new FormData(form_empresa);
+    const form = document.getElementById('form_turma');
+    const formData = new FormData(form_turma);
     const opt = {
 
         method: 'POST',
         body: formData
     }
-    const response = fetch('3empresa.php', opt);
+    const response = fetch('5turma.php', opt);
 
 }
 salvar_disciplina.addEventListener('click', async () => {

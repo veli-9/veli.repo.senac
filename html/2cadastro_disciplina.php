@@ -16,9 +16,9 @@
         <input type="text" id='nome' name='nome' placeholder="Insira aqui o nome da disciplina">
         <br>
         <br>
-        <label for='ativo'>Em andamento?</label>
+        <label for='ativo'>Aceita os termos?</label>
         <br>
-        <input type='checkbox' id='ativo' name='ativo' value='true'>
+        <input type='checkbox' id='ativo' name='ativo'>
         <br>
         <br>
         <button type="button" id="btnsalvar">SALVAR</button>

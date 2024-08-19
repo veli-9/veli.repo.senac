@@ -5,35 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Aluno</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
 </head>
 
 <body>
-    <form id = 'aluno1'>
-        <h1>Cadastro de Alunos</h1>
-        <hr>
-        <label for='nome'>Nome</label>
-        <br>
-        <input type="text" id='nome' name='nome' placeholder="Insira aqui o nome do abestado">
-        <br>
-        <label for="cpf">CPF</label>
-        <br>
-        <input type="number" id="cpf" name="cpf" placeholder="Insira aqui o cpf do abestado">
-        <br>
-        <label for="rg">CPF</label>
-        <br>
-        <input type="number" id="rg" name="rg" placeholder="Insira aqui o rg do abestado">
-        <br>
-        <label for="data_nascimento">CPF</label>
-        <br>
-        <input type="date" id="data_nascimento" name="data_nascimento" placeholder="Insira aqui a data de nascimento do abestado">
-        <br>
-        <br>
+    <H1>CADASTRO DOS ALUNO</H1>
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-warning" role="alert">
+                * SE DIGITAR INFORMAÇÕES FALSAS VOCÊ VAI PRESO NOS TERMOS DA LEI 123456123/1999
+            </div>
 
-        <button type= "button" id="btnsalvar">SALVAR</button>
+
+
+        </div>
+
+
+    </div>
+
+
+    </div>
+
+    <form id='aluno1'>
+    <hr>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+            <label for="nome">Nome</label>
+        </div>
+        <br>
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="cpf" name="cpf" placeholder="Digite seu CPF">
+            <label for="cpf">CPF</label>
+        </div>
+        <br>
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="rg" name="rg" placeholder="Digite seu RG">
+            <label for="rg">RG</label>
+        </div>
+        <br>
+        <div class="form-floating mb-3">
+            <input type="date" class="form-control" id="data_nascimento" name="data_nascimento" placeholder="Digite sua data de nascimento">
+            <label for="data_nascimento">Data de Nascimento</label>
+        </div>
+        <br>
+        <button type="button" id="btnsalvar" class="btn btn-success">SALVAR</button>
+
+
+
     </form>
-    <script src ="/js/1cadastro_aluno.js"></script>
+    <script src="/js/1cadastro_aluno.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
 </body>
-
-
 
 </html>

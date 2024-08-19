@@ -4,7 +4,7 @@ const salvar_disciplina =
 async function insert() {
 
     const form = document.getElementById('form_disciplina');
-    const formData = new FormData(form_disciplina);
+    const formData = new FormData(form);
     const opt = {
 
         method: 'POST',
