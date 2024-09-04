@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+</head>
+
+<body>
+    <h1 id="cad_clientes" class="clientes"> Cadastro de Clientes</h1>
+    <hr>
+    <br>
+    <form name="form" id="form">
+        <label for="nome"> Nome completo: </label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome"/>
+    </form>
+
+</body>
+
+</html>

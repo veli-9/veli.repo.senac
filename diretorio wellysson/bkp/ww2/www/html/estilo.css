@@ -1,0 +1,21 @@
+body {
+    background-color: rgba(4, 91, 112, 0.329)
+
+}
+
+h1 {
+    color: rgba(0, 21, 206, 0.623);   
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-color: rgb(43, 0, 235);
+
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
