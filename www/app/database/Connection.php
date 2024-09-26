@@ -5,7 +5,7 @@ namespace app\database;
 use PDO;
 //cria a classe Connection
 class Connection
-{//mantém a conexão com o banco de dados aberta ao final do script
+{ //mantém a conexão com o banco de dados aberta ao final do script
     private static $pdo = null;
     //cria a =
     public static function open(): PDO
