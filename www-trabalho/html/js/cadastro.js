@@ -8,12 +8,18 @@ async function Insert() {
         body: formData
     };
     const response = await fetch('/insert', opt);
-    const json = await response.json();
+if (!response.ok) {
+    const errorText = await response.text(); // Leia a resposta como texto
+    console.error('Erro:', errorText);
+    alert('Verique os dados digitados e tente novamente!');
+    return;
+}
+const json = await response.json()
     if (json.status != true) {
         alert('Verique os dados digitados e tente novamente!');
         return;
     }
-    alert('Disciplina cadastrada com sucesso!');
+    alert('Usuário cadastrado com sucesso!');
     return;
 }
 salvar.addEventListener('click', async () => {

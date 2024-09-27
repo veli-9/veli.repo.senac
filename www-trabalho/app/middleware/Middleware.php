@@ -26,7 +26,11 @@ class Middleware
                         ->withStatus(302);
                     die();
                 }
+                
+                
             }
+            
+            
             return $response;
             die();
         };

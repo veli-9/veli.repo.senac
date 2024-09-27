@@ -17,8 +17,8 @@
 </head>
 
 <body>
-    <form id="form">
-        <div id="login">
+    <div>
+        <form id="form_login">
             <h3 class="text-center text-white pt-5"></h3>
             <div class="container">
                 <div id="login-row" class="row justify-content-center align-items-center">
@@ -38,7 +38,7 @@
                                 <label for="remember-me" class="text-info"><span>Lembrar de mim:</span><span><input
                                             id="remember-me" name="remember-me" type="checkbox"></span></label><br>
                                 <br>
-                                <button type="button" class="btn btn-info">Login</button>
+                                <button type="button" id="btnlogin" class="btn btn-info">Login</button>
                                 <button type="button" class="btn btn-info" data-bs-toggle="modal"
                                     data-bs-target="#registro">Registre-se</button>
                                 <br>
@@ -53,7 +53,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
+    </div>
+    <form id="form">
         <div class="modal fade" id="esquecisenha" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -115,9 +117,9 @@
                             <BR>
                             <div class="col-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="ativo" name="ativo">
-                                    <label class="form-check-label">
-                                        Confirme os termos
+                                    <input type="hidden" name="ativo" value="0">
+                                    <input type="checkbox" id="ativo" name="ativo" value="1">
+                                    Confirme os termos
                                     </label>
                                 </div>
                             </div>
@@ -134,6 +136,7 @@
         </div>
     </form>
     <script src="/js/cadastro.js"></script>
+    <script src="/js/login.js"></script>
 </body>
 
 
